@@ -9,7 +9,7 @@ Eleven years of hand-typed delivery challans and stock ledgers, rebuilt into a t
 | Year | Workbook | Notes | Status |
 |---|---|---|---|
 | 2009 | [`Recon-09.xlsx`](workbooks/Recon-09.xlsx) | [notes](docs/years/2009.md) | ✅ published |
-| 2010 | `Recon-10.xlsx` | — | ⏳ coming |
+| 2010 | [`Recon-10.xlsx`](workbooks/Recon-10.xlsx) | [notes](docs/years/2010.md) | ✅ published |
 | 2011 | `Recon-11.xlsx` | — | ⏳ coming |
 | 2012 | `Recon-12.xlsx` | — | ⏳ coming |
 | 2013 | `Recon-13.xlsx` | — | ⏳ coming |

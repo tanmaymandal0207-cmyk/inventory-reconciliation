@@ -1,0 +1,4 @@
+*.xlsx binary
+*.xlsm binary
+*.xlsb binary
+*.md   text eol=lf

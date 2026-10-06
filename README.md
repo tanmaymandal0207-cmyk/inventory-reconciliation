@@ -11,7 +11,7 @@ Eleven years of hand-typed delivery challans and stock ledgers, rebuilt into a t
 | 2009 | [`Recon-09.xlsx`](workbooks/Recon-09.xlsx) | [notes](docs/years/2009.md) | ✅ published |
 | 2010 | [`Recon-10.xlsx`](workbooks/Recon-10.xlsx) | [notes](docs/years/2010.md) | ✅ published |
 | 2011 | [`Recon-11.xlsx`](workbooks/Recon-11.xlsx) | [notes](docs/years/2011.md) | ✅ published |
-| 2012 | `Recon-12.xlsx` | — | ⏳ coming |
+| 2012 | [`Recon-12.xlsx`](workbooks/Recon-12.xlsx) | [notes](docs/years/2012.md) | ✅ published |
 | 2013 | `Recon-13.xlsx` | — | ⏳ coming |
 | 2014 | `Recon-14.xlsx` | — | ⏳ coming |
 | 2015 | `Recon-15.xlsx` | — | ⏳ coming |
@@ -27,7 +27,7 @@ Eleven years of hand-typed delivery challans and stock ledgers, rebuilt into a t
 2. **Evidence cancellations.** A challan counts as cancelled only when the ledger's list or the challan stamp says so.
 3. **Summarise per part.** `Part Summary` gives total, cancelled and net quantity.
 4. **Reconcile the year.** `Recon` compares challan quantity with ledger stock per part, matching on code cores, descriptions or size patterns, and never force-matches ambiguous rows.
-5. **Consolidate.** `Master.xlsx` holds 2,438 parts × one block per year. Matching is limited to the same product section because part codes were reused across families, and unmatched rows are kept as year-only rows.
+5. **Consolidate.** `Master.xlsx` holds 2,425 parts × one block per year. Matching is limited to the same product section because part codes were reused across families, and unmatched rows are kept as year-only rows.
 6. **Audit.** The Year Register ties source to master for every year. The Findings Log records every rule, exclusion and open question.
 
 Details: [methodology](docs/methodology.md) · [data dictionary](docs/data-dictionary.md)
@@ -39,6 +39,6 @@ These are real operational records, anonymised before publication: party names, 
 ## Repository layout
 
 ```
-workbooks/   Recon-09.xlsx … Recon-18.xlsx, Master.xlsx
+workbooks/   Recon-09.xlsx … Recon-19.xlsx, Master.xlsx
 docs/        methodology, data dictionary, anonymisation, per-year notes, audit findings
 ```

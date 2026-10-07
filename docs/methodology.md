@@ -16,7 +16,7 @@ How eleven years of delivery challans and stock ledgers were turned into one aud
 CHALLAN blocks ──► Pivot Data ──► Part Summary ──┐
    (1 row per line)   (per part: total /         │
                        cancelled / net)          ├──► Recon (per year) ──► Master (all years) ──► Audit
-Stock ledger (Part n) ───────────────────────────┘      challan vs stock     2,438 parts × year     tie-outs +
+Stock ledger (Part n) ───────────────────────────┘      challan vs stock     2,425 parts × year     tie-outs +
                                                                               blocks                findings
 ```
 
@@ -50,7 +50,7 @@ Rows whose key is ambiguous are **not** force-matched. They are listed in the ye
 
 ### 5. Master (`Master.xlsx`)
 
-- **Grain:** one row per part (`Section · Group · Item · Part Code`), 2,438 rows.
+- **Grain:** one row per part (`Section · Group · Item · Part Code`), 2,425 rows.
 - **Year blocks:** `Total Available · Challan · Stock · Difference` for each year 2009–2019.
 - **Matching into the master is section-scoped.** Part codes were reused across product families over the decade, so a code match is accepted only inside the same master section. A year row with no safe match is added as a *year-only* row rather than merged into the wrong part.
 - `Difference` is always recomputed (`Challan − Stock`). Typed gap values in the sources are not trusted.

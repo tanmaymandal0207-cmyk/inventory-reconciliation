@@ -1,8 +1,71 @@
 # Inventory Reconciliation 2009–2019
 
-Eleven years of hand-typed delivery challans and stock ledgers, rebuilt into a traceable part-level reconciliation: challan lines flattened and validated, cancellations evidenced, each year's challan-vs-stock reconciliation tied out, and every year consolidated into a single master with an audit register and findings log.
+Eleven years of hand-typed delivery challans and stock ledgers, rebuilt into a traceable, part-level reconciliation in Excel. Every challan line is flattened and validated, cancellations are evidenced, each year's challan-vs-stock reconciliation is tied out, and all years are consolidated into one master with an audit register and findings log.
+
+| 11 years | 63,360 challan lines | 2,425 parts | 116 findings logged | Δ 0 on every year |
+|:---:|:---:|:---:|:---:|:---:|
 
 **Stack:** Excel 365 · structured tables · pivot tables · formula-driven reconciliation · Git
+
+## Pipeline
+
+```mermaid
+flowchart LR
+    A["Delivery challans<br/>hand-typed, one block per challan"] --> B["Pivot Data<br/>one row per challan line<br/>Source Row · Basis · Cancelled"]
+    B --> C["Part Summary<br/>total / cancelled / net per part"]
+    L["Stock ledgers<br/>Part 1 … Part 13"] --> D
+    C --> D["Recon<br/>challan vs ledger per part<br/>Gap · Total Available"]
+    D --> M["Master.xlsx<br/>2,425 parts × one block per year"]
+    M --> R["Audit<br/>Year Register (Δ 0) · Findings Log"]
+```
+
+Each yearly workbook (`Recon-09.xlsx` … `Recon-19.xlsx`) runs the first four steps; `Master.xlsx` consolidates all eleven years and proves the tie-out.
+
+## From raw challan to master: a 2018 walkthrough
+
+All screenshots are taken from the published, anonymised workbooks.
+
+### 1. Raw challan, as typed (`Recon-18.xlsx` › `Challan`)
+
+GST-Challan 2018-001, dated 02.01.18. A header block (party, attention, address, GSTIN, all anonymised here) is followed by product bands (yellow) and item lines with cartons (`CTN`, column D) × pieces per carton (column E). The 2018 book is numbered 2018-001 to 2018-1167.
+
+![Raw delivery challan](docs/images/01-raw-challan.png)
+
+### 2. Flattened lines (`Pivot Data`)
+
+Every item line becomes one row. `Source Row` points back to the challan row (row 15 is the BOLERO (SMALL) A/C SWITCH line above), `Basis` records the quantity rule applied (`D x E`, or the Qty column when cartons × pieces is not available), and `Cancelled` / `Cancel Evidence` carry the cancellation flag.
+
+![Pivot Data: one row per challan line](docs/images/02-pivot-data.png)
+
+### 3. Totals per part (`Part Summary`)
+
+Pivot Data grouped by part name and part number: total, cancelled and net quantity.
+
+![Part Summary](docs/images/03-part-summary.png)
+
+### 4. Year reconciliation (`Recon`)
+
+One block per stock ledger (Condenser = Part 1, Cooling Coil = Part 3, …). For each part, `Challan (sold)` from the challans is compared with `Sold` from the ledger; `Gap` is green at zero and red otherwise, and `Total Available` comes from the ledger. Ambiguous rows are never force-matched.
+
+![Recon: challan vs stock ledger](docs/images/04-recon.png)
+
+### 5. Master (`Master.xlsx` › `Master`)
+
+One row per part, one block per year (Total Available · Challan · Stock · Difference). Shown: the 2017, 2018 and 2019 blocks. The 2009–2016 columns are hidden for the screenshot, and the Section / Group columns are hidden in the workbook. Matching is limited to the same product section because part codes were reused across families; unmatched rows are kept as year-only rows.
+
+![Master table](docs/images/05-master.png)
+
+### 6. Tie-out (`Audit` › Year Register)
+
+Source workbook vs master for every year: rows, challan quantity, stock quantity and total available. Blue figures are typed from the source workbook; master figures are live `SUM`s over the master table. Every Δ is 0 and the `Status` formula reads *Ties* for all eleven years (columns P–X, the challan-line checks, are hidden for the screenshot).
+
+![Year Register](docs/images/06-year-register.png)
+
+### 7. Findings Log (`Audit`)
+
+Every rule, exclusion and open question, with the rows affected, the treatment and a status. Items marked *Open* need an owner decision and were not silently adjusted.
+
+![Findings Log](docs/images/07-findings-log.png)
 
 ## Results
 
@@ -22,33 +85,24 @@ All eleven years tie to the master with **Δ 0** on row count, challan quantity,
 | [2018](docs/years/2018.md) | 1,656 | 178,241 | 194,336 | 11,300 | 5 (3) | ✅ Ties |
 | [2019](docs/years/2019.md) | 1,260 | 84,334 | 65,853 | 5,709 | 5 (0) | ✅ Ties |
 
-116 findings logged (see [audit findings](docs/audit-findings.md)); items marked *Open* need an owner decision and were **not** silently adjusted.
+All 116 findings: [audit findings](docs/audit-findings.md).
 
-## Contents
+## Workbooks
 
-| Year | Workbook | Notes | Status |
-|---|---|---|---|
-| 2009 | [`Recon-09.xlsx`](workbooks/Recon-09.xlsx) | [notes](docs/years/2009.md) | ✅ published |
-| 2010 | [`Recon-10.xlsx`](workbooks/Recon-10.xlsx) | [notes](docs/years/2010.md) | ✅ published |
-| 2011 | [`Recon-11.xlsx`](workbooks/Recon-11.xlsx) | [notes](docs/years/2011.md) | ✅ published |
-| 2012 | [`Recon-12.xlsx`](workbooks/Recon-12.xlsx) | [notes](docs/years/2012.md) | ✅ published |
-| 2013 | [`Recon-13.xlsx`](workbooks/Recon-13.xlsx) | [notes](docs/years/2013.md) | ✅ published |
-| 2014 | [`Recon-14.xlsx`](workbooks/Recon-14.xlsx) | [notes](docs/years/2014.md) | ✅ published |
-| 2015 | [`Recon-15.xlsx`](workbooks/Recon-15.xlsx) | [notes](docs/years/2015.md) | ✅ published |
-| 2016 | [`Recon-16.xlsx`](workbooks/Recon-16.xlsx) | [notes](docs/years/2016.md) | ✅ published |
-| 2017 | [`Recon-17.xlsx`](workbooks/Recon-17.xlsx) | [notes](docs/years/2017.md) | ✅ published |
-| 2018 | [`Recon-18.xlsx`](workbooks/Recon-18.xlsx) | [notes](docs/years/2018.md) | ✅ published |
-| 2019 | [`Recon-19.xlsx`](workbooks/Recon-19.xlsx) | [notes](docs/years/2019.md) | ✅ published |
-| 2009–2019 | [`Master.xlsx`](workbooks/Master.xlsx) | [findings](docs/audit-findings.md) | ✅ published |
-
-## How the reconciliation works
-
-1. **Flatten challans.** Every challan line becomes one row in `Pivot Data`, with a drill-back `Source Row`, a quantity rule (`D × E` or quantity-only) and a cancellation flag.
-2. **Evidence cancellations.** A challan counts as cancelled only when the ledger's list or the challan stamp says so.
-3. **Summarise per part.** `Part Summary` gives total, cancelled and net quantity.
-4. **Reconcile the year.** `Recon` compares challan quantity with ledger stock per part, matching on code cores, descriptions or size patterns, and never force-matches ambiguous rows.
-5. **Consolidate.** `Master.xlsx` holds 2,425 parts × one block per year. Matching is limited to the same product section because part codes were reused across families, and unmatched rows are kept as year-only rows.
-6. **Audit.** The Year Register ties source to master for every year. The Findings Log records every rule, exclusion and open question.
+| Year | Workbook | Notes |
+|---|---|---|
+| 2009 | [`Recon-09.xlsx`](workbooks/Recon-09.xlsx) | [notes](docs/years/2009.md) |
+| 2010 | [`Recon-10.xlsx`](workbooks/Recon-10.xlsx) | [notes](docs/years/2010.md) |
+| 2011 | [`Recon-11.xlsx`](workbooks/Recon-11.xlsx) | [notes](docs/years/2011.md) |
+| 2012 | [`Recon-12.xlsx`](workbooks/Recon-12.xlsx) | [notes](docs/years/2012.md) |
+| 2013 | [`Recon-13.xlsx`](workbooks/Recon-13.xlsx) | [notes](docs/years/2013.md) |
+| 2014 | [`Recon-14.xlsx`](workbooks/Recon-14.xlsx) | [notes](docs/years/2014.md) |
+| 2015 | [`Recon-15.xlsx`](workbooks/Recon-15.xlsx) | [notes](docs/years/2015.md) |
+| 2016 | [`Recon-16.xlsx`](workbooks/Recon-16.xlsx) | [notes](docs/years/2016.md) |
+| 2017 | [`Recon-17.xlsx`](workbooks/Recon-17.xlsx) | [notes](docs/years/2017.md) |
+| 2018 | [`Recon-18.xlsx`](workbooks/Recon-18.xlsx) | [notes](docs/years/2018.md) |
+| 2019 | [`Recon-19.xlsx`](workbooks/Recon-19.xlsx) | [notes](docs/years/2019.md) |
+| 2009–2019 | [`Master.xlsx`](workbooks/Master.xlsx) | [audit findings](docs/audit-findings.md) |
 
 Details: [methodology](docs/methodology.md) · [data dictionary](docs/data-dictionary.md)
 
@@ -59,6 +113,7 @@ These are real operational records, anonymised before publication: party names, 
 ## Repository layout
 
 ```
-workbooks/   Recon-09.xlsx … Recon-19.xlsx, Master.xlsx
-docs/        methodology, data dictionary, anonymisation, per-year notes, audit findings
+workbooks/     Recon-09.xlsx … Recon-19.xlsx, Master.xlsx
+docs/          methodology, data dictionary, anonymisation, per-year notes, audit findings
+docs/images/   README screenshots
 ```

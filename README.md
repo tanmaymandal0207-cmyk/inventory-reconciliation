@@ -4,6 +4,26 @@ Eleven years of hand-typed delivery challans and stock ledgers, rebuilt into a t
 
 **Stack:** Excel 365 · structured tables · pivot tables · formula-driven reconciliation · Git
 
+## Results
+
+All eleven years tie to the master with **Δ 0** on row count, challan quantity, stock quantity, total available and challan lines.
+
+| Year | Recon rows | Challan qty | Stock qty | Challan lines loaded | Findings (open) | Tie-out |
+|---|---:|---:|---:|---:|---:|---|
+| [2009](docs/years/2009.md) | 246 | 109,320 | 71,814 | 1,911 | 13 (4) | ✅ Ties |
+| [2010](docs/years/2010.md) | 353 | 133,929.35 | 134,228.18 | 2,670 | 14 (3) | ✅ Ties |
+| [2011](docs/years/2011.md) | 444 | 342,970 | 340,798 | 2,499 | 15 (5) | ✅ Ties |
+| [2012](docs/years/2012.md) | 496 | 193,317 | 197,723 | 4,031 | 10 (4) | ✅ Ties |
+| [2013](docs/years/2013.md) | 1,012 | 163,107 | 165,664 | 4,531 | 10 (5) | ✅ Ties |
+| [2014](docs/years/2014.md) | 1,132 | 206,744 | 181,798 | 5,416 | 11 (6) | ✅ Ties |
+| [2015](docs/years/2015.md) | 916 | 167,028 | 164,589 | 7,325 | 10 (5) | ✅ Ties |
+| [2016](docs/years/2016.md) | 1,307 | 117,951 | 121,899 | 6,138 | 12 (5) | ✅ Ties |
+| [2017](docs/years/2017.md) | 1,355 | 199,242 | 192,742 | 11,830 | 11 (4) | ✅ Ties |
+| [2018](docs/years/2018.md) | 1,656 | 178,241 | 194,336 | 11,300 | 5 (3) | ✅ Ties |
+| [2019](docs/years/2019.md) | 1,260 | 84,334 | 65,853 | 5,709 | 5 (0) | ✅ Ties |
+
+116 findings logged (see [audit findings](docs/audit-findings.md)); items marked *Open* need an owner decision and were **not** silently adjusted.
+
 ## Contents
 
 | Year | Workbook | Notes | Status |

@@ -16,7 +16,7 @@ Eleven years of hand-typed delivery challans and stock ledgers, rebuilt into a t
 | 2014 | [`Recon-14.xlsx`](workbooks/Recon-14.xlsx) | [notes](docs/years/2014.md) | ✅ published |
 | 2015 | [`Recon-15.xlsx`](workbooks/Recon-15.xlsx) | [notes](docs/years/2015.md) | ✅ published |
 | 2016 | [`Recon-16.xlsx`](workbooks/Recon-16.xlsx) | [notes](docs/years/2016.md) | ✅ published |
-| 2017 | `Recon-17.xlsx` | — | ⏳ coming |
+| 2017 | [`Recon-17.xlsx`](workbooks/Recon-17.xlsx) | [notes](docs/years/2017.md) | ✅ published |
 | 2018 | `Recon-18.xlsx` | — | ⏳ coming |
 | 2019 | `Recon-19.xlsx` | — | ⏳ coming |
 | 2009–2019 | `Master.xlsx` | — | ⏳ coming |

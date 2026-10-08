@@ -1,11 +1,19 @@
-# Inventory Reconciliation 2009–2019
+<p align="center">
+<img src="docs/images/banner.svg" alt="Inventory Reconciliation 2009–2019" width="100%">
+</p>
 
 Eleven years of hand-typed delivery challans and stock ledgers, rebuilt into a traceable, part-level reconciliation in Excel. Every challan line is flattened and validated, cancellations are evidenced, each year's challan-vs-stock reconciliation is tied out, and all years are consolidated into one master with an audit register and findings log.
 
 | 11 years | 63,360 challan lines | 2,425 parts | 116 findings logged | Δ 0 on every year |
 |:---:|:---:|:---:|:---:|:---:|
 
-**Stack:** Excel 365 · structured tables · pivot tables · formula-driven reconciliation · Git
+<p align="center">
+<img alt="Excel" src="https://img.shields.io/badge/Excel-365-8FAE8B?labelColor=3E4F3B">
+<img alt="Structured tables" src="https://img.shields.io/badge/Structured-tables-C9D8BE?labelColor=3E4F3B">
+<img alt="Pivot tables" src="https://img.shields.io/badge/Pivot-tables-C9D8BE?labelColor=3E4F3B">
+<img alt="Tie-out" src="https://img.shields.io/badge/Tie--out-%CE%94%200%20every%20year-E9D3A8?labelColor=3E4F3B">
+<img alt="Git" src="https://img.shields.io/badge/Version%20control-Git-C9D8BE?labelColor=3E4F3B">
+</p>
 
 ## Pipeline
 

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="300" viewBox="0 0 1280 300" role="img" aria-label="Inventory Reconciliation 2009–2019: challan vs stock ledger, tied out every year">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F5EC"/>
+      <stop offset="1" stop-color="#E7EDDC"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#CFD9C2"/>
+    </pattern>
+    <clipPath id="card"><rect x="1" y="1" width="1278" height="298" rx="18"/></clipPath>
+  </defs>
+
+  <!-- card -->
+  <rect x="1" y="1" width="1278" height="298" rx="18" fill="url(#bg)" stroke="#D6DFC9" stroke-width="2"/>
+  <g clip-path="url(#card)">
+    <rect x="840" y="0" width="440" height="300" fill="url(#grid)" opacity="0.7"/>
+    <rect x="0" y="0" width="10" height="300" fill="#8FAE8B"/>
+  </g>
+
+  <!-- shelf rack with cartons (stock) -->
+  <g>
+    <rect x="884" y="52" width="8" height="206" rx="3" fill="#7A8C74"/>
+    <rect x="1060" y="52" width="8" height="206" rx="3" fill="#7A8C74"/>
+    <rect x="880" y="118" width="192" height="7" rx="3" fill="#7A8C74"/>
+    <rect x="880" y="186" width="192" height="7" rx="3" fill="#7A8C74"/>
+    <rect x="880" y="252" width="192" height="7" rx="3" fill="#7A8C74"/>
+    <!-- top shelf -->
+    <rect x="900" y="78" width="46" height="40" rx="4" fill="#E9D3A8"/>
+    <rect x="950" y="88" width="40" height="30" rx="4" fill="#D9BC8C"/>
+    <rect x="994" y="72" width="56" height="46" rx="4" fill="#E9D3A8"/>
+    <!-- middle shelf -->
+    <rect x="900" y="144" width="60" height="42" rx="4" fill="#D9BC8C"/>
+    <rect x="964" y="152" width="40" height="34" rx="4" fill="#E9D3A8"/>
+    <rect x="1008" y="140" width="44" height="46" rx="4" fill="#C9D8BE"/>
+    <!-- bottom shelf -->
+    <rect x="900" y="214" width="44" height="38" rx="4" fill="#E9D3A8"/>
+    <rect x="948" y="206" width="58" height="46" rx="4" fill="#D9BC8C"/>
+    <rect x="1010" y="220" width="40" height="32" rx="4" fill="#E9D3A8"/>
+    <!-- carton tape lines -->
+    <g stroke="#C4A576" stroke-width="2" opacity="0.8">
+      <line x1="923" y1="78" x2="923" y2="118"/><line x1="1022" y1="72" x2="1022" y2="118"/>
+      <line x1="930" y1="144" x2="930" y2="186"/><line x1="977" y1="206" x2="977" y2="252"/>
+    </g>
+  </g>
+
+  <!-- ledger card (challan vs stock) -->
+  <g>
+    <rect x="1096" y="70" width="128" height="164" rx="10" fill="#FFFDF7" stroke="#C9D3BC" stroke-width="2"/>
+    <rect x="1096" y="70" width="128" height="26" rx="10" fill="#8FAE8B"/>
+    <rect x="1096" y="84" width="128" height="12" fill="#8FAE8B"/>
+    <g stroke="#D8DFCD" stroke-width="2">
+      <line x1="1110" y1="118" x2="1210" y2="118"/>
+      <line x1="1110" y1="142" x2="1210" y2="142"/>
+      <line x1="1110" y1="166" x2="1210" y2="166"/>
+      <line x1="1110" y1="190" x2="1210" y2="190"/>
+    </g>
+    <g stroke="#5E7A5B" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="1112,110 1117,115 1126,105"/>
+      <polyline points="1112,134 1117,139 1126,129"/>
+      <polyline points="1112,158 1117,163 1126,153"/>
+      <polyline points="1112,182 1117,187 1126,177"/>
+    </g>
+    <g fill="#B9C6AE">
+      <rect x="1136" y="106" width="44" height="7" rx="3"/><rect x="1136" y="130" width="60" height="7" rx="3"/>
+      <rect x="1136" y="154" width="36" height="7" rx="3"/><rect x="1136" y="178" width="52" height="7" rx="3"/>
+    </g>
+    <!-- delta-zero seal -->
+    <circle cx="1214" cy="226" r="28" fill="#E9D3A8" stroke="#FFFDF7" stroke-width="4"/>
+    <text x="1214" y="234" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" font-weight="700" fill="#5C4A2E">Δ 0</text>
+  </g>
+
+  <!-- text -->
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <text x="64" y="90" fill="#6F8F6B" font-size="19" font-weight="600" letter-spacing="3">EXCEL 365  ·  CHALLAN vs STOCK  ·  2009 – 2019</text>
+    <text x="64" y="148" fill="#2F3B2E" font-size="48" font-weight="700">Inventory Reconciliation</text>
+    <text x="64" y="190" fill="#4F5E4C" font-size="21">Eleven years of hand-typed challans and stock ledgers, tied out part by part</text>
+    <rect x="64" y="218" width="688" height="40" rx="20" fill="#DFE8D4"/>
+    <text x="84" y="244" fill="#4A6247" font-size="17">11 years  ·  63,360 challan lines  ·  2,425 parts  ·  116 findings logged  ·  Δ 0 every year</text>
+  </g>
+</svg>

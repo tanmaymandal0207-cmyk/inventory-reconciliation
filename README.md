@@ -125,3 +125,12 @@ workbooks/     Recon-09.xlsx … Recon-19.xlsx, Master.xlsx
 docs/          methodology, data dictionary, anonymisation, per-year notes, audit findings
 docs/images/   README screenshots
 ```
+
+## Changelog
+
+Release notes are in [CHANGELOG.md](CHANGELOG.md) (current release: v1.0, 11 Oct 2026).
+
+---
+
+**Author:** Tanmay Mandal, Business Analysis · Operations · ERP
+© Tanmay Mandal. All rights reserved. Shared for portfolio viewing only.

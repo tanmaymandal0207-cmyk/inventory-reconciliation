@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Docs
+- README: author/copyright footer and a link to this changelog (17 Oct 2026).
+- README: 2009–2019 totals row and findings-by-status summary (66 Info · 44 Open · 6 Closed) in Results (18 Oct 2026).
+
 ## v1.0 — 11 Oct 2026
 
 First complete release: 2009–2019.

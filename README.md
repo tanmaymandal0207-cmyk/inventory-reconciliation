@@ -92,8 +92,11 @@ All eleven years tie to the master with **Δ 0** on row count, challan quantity,
 | [2017](docs/years/2017.md) | 1,355 | 199,242 | 192,742 | 11,830 | 11 (4) | ✅ Ties |
 | [2018](docs/years/2018.md) | 1,656 | 178,241 | 194,336 | 11,300 | 5 (3) | ✅ Ties |
 | [2019](docs/years/2019.md) | 1,260 | 84,334 | 65,853 | 5,709 | 5 (0) | ✅ Ties |
+| **2009–2019** | **10,177** | **1,896,183.35** | **1,831,444.18** | **63,360** | **116 (44)** | ✅ **Ties** |
 
-All 116 findings: [audit findings](docs/audit-findings.md).
+Recon rows are counted per year, so a part that moved in several years appears once in each; the master holds 2,425 unique parts.
+
+Findings by status: **66 Info · 44 Open · 6 Closed**. All 116 findings: [audit findings](docs/audit-findings.md).
 
 ## Workbooks
 

@@ -24,3 +24,7 @@ First complete release: 2009–2019.
 ### Known open items
 - Findings marked **Open** in the Findings Log need an owner decision; they are reported, not adjusted.
 - 2019: the master block was reloaded from the final Recon-19 (findings F19-01 to F19-05; F19-05 records the owner's decision to merge 13 clutch-plate / bearing rows into their Part 7 – Coils rows).
+
+## Repository maintenance
+
+- 15 Nov 2026: README links related portfolio projects.

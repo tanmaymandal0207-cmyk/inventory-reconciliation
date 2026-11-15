@@ -133,6 +133,12 @@ docs/images/   README screenshots
 
 Release notes are in [CHANGELOG.md](CHANGELOG.md) (current release: v1.0, 11 Oct 2026).
 
+## Related projects
+
+- [Swift Condenser Demand Gap](https://github.com/tanmaymandal0207-cmyk/Swift_Condenser_Legacy_Analysis): SKU demand-gap study on automotive aftermarket dispatch history
+- [Commercial Intelligence Dashboard](https://github.com/tanmaymandal0207-cmyk/Commercial-Intelligence-Dashboard): Power BI revenue, pricing and lifecycle analysis
+- [Logistics Expense Tracker](https://github.com/tanmaymandal0207-cmyk/logistics-expense-tracker): SUMIFS reconciliation of hand-typed monthly freight totals
+
 ---
 
 **Author:** Tanmay Mandal, Business Analysis · Operations · ERP

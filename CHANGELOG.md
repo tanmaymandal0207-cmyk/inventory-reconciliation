@@ -28,3 +28,4 @@ First complete release: 2009–2019.
 ## Repository maintenance
 
 - 15 Nov 2026: README links related portfolio projects.
+- 16 Nov 2026: README no longer links `Recon-13.xlsx`, which has not been uploaded yet; the 2013 row is marked as pending until the anonymised copy is published.

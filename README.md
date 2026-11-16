@@ -106,7 +106,7 @@ Findings by status: **66 Info · 44 Open · 6 Closed**. All 116 findings: [audit
 | 2010 | [`Recon-10.xlsx`](workbooks/Recon-10.xlsx) | [notes](docs/years/2010.md) |
 | 2011 | [`Recon-11.xlsx`](workbooks/Recon-11.xlsx) | [notes](docs/years/2011.md) |
 | 2012 | [`Recon-12.xlsx`](workbooks/Recon-12.xlsx) | [notes](docs/years/2012.md) |
-| 2013 | [`Recon-13.xlsx`](workbooks/Recon-13.xlsx) | [notes](docs/years/2013.md) |
+| 2013 | `Recon-13.xlsx` *(anonymised copy pending upload)* | [notes](docs/years/2013.md) |
 | 2014 | [`Recon-14.xlsx`](workbooks/Recon-14.xlsx) | [notes](docs/years/2014.md) |
 | 2015 | [`Recon-15.xlsx`](workbooks/Recon-15.xlsx) | [notes](docs/years/2015.md) |
 | 2016 | [`Recon-16.xlsx`](workbooks/Recon-16.xlsx) | [notes](docs/years/2016.md) |
@@ -124,7 +124,7 @@ These are real operational records, anonymised before publication: party names, 
 ## Repository layout
 
 ```
-workbooks/     Recon-09.xlsx … Recon-19.xlsx, Master.xlsx
+workbooks/     Recon-09.xlsx … Recon-19.xlsx (Recon-13 pending), Master.xlsx
 docs/          methodology, data dictionary, anonymisation, per-year notes, audit findings
 docs/images/   README screenshots
 ```

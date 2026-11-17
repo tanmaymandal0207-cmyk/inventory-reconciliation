@@ -123,7 +123,7 @@ These are real operational records, anonymised before publication: party names, 
 
 ## Repository layout
 
-```
+```text
 workbooks/     Recon-09.xlsx … Recon-19.xlsx (Recon-13 pending), Master.xlsx
 docs/          methodology, data dictionary, anonymisation, per-year notes, audit findings
 docs/images/   README screenshots

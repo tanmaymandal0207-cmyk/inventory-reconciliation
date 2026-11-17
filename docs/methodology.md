@@ -12,7 +12,7 @@ How eleven years of delivery challans and stock ledgers were turned into one aud
 
 ## Pipeline
 
-```
+```text
 CHALLAN blocks ──► Pivot Data ──► Part Summary ──┐
    (1 row per line)   (per part: total /         │
                        cancelled / net)          ├──► Recon (per year) ──► Master (all years) ──► Audit

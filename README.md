@@ -15,6 +15,15 @@ Eleven years of hand-typed delivery challans and stock ledgers, rebuilt into a t
 <img alt="Git" src="https://img.shields.io/badge/Version%20control-Git-C9D8BE?labelColor=3E4F3B">
 </p>
 
+<p align="center">
+<a href="#pipeline">Pipeline</a> ·
+<a href="#from-raw-challan-to-master-a-2018-walkthrough">2018 walkthrough</a> ·
+<a href="#results">Results</a> ·
+<a href="#workbooks">Workbooks</a> ·
+<a href="#data-privacy">Data privacy</a> ·
+<a href="#repository-layout">Layout</a>
+</p>
+
 ## Pipeline
 
 ```mermaid

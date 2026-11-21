@@ -150,5 +150,5 @@ Release notes are in [CHANGELOG.md](CHANGELOG.md) (current release: v1.0, 11 Oct
 
 ---
 
-**Author:** Tanmay Mandal, Business Analysis · Operations · ERP
+**Author:** Tanmay Mandal, Business Analysis · Operations · ERP · [LinkedIn](https://www.linkedin.com/in/tanmay-mandal-286623247)
 © Tanmay Mandal. All rights reserved. Shared for portfolio viewing only.

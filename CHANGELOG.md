@@ -6,6 +6,8 @@
 
 - README: author/copyright footer and a link to this changelog (17 Oct 2026).
 - README: 2009–2019 totals row and findings-by-status summary (66 Info · 44 Open · 6 Closed) in Results (18 Oct 2026).
+- README: section navigation bar below the badges, and the Related projects link updated to Condenser Forecast Analysis after that repository's rename (20 Nov 2026).
+- README: LinkedIn link in the author footer (21 Nov 2026).
 
 ## v1.0 — 11 Oct 2026
 

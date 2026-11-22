@@ -21,7 +21,8 @@ Eleven years of hand-typed delivery challans and stock ledgers, rebuilt into a t
 <a href="#results">Results</a> ·
 <a href="#workbooks">Workbooks</a> ·
 <a href="#data-privacy">Data privacy</a> ·
-<a href="#repository-layout">Layout</a>
+<a href="#repository-layout">Layout</a> ·
+<a href="#related-projects">Related</a>
 </p>
 
 ## Pipeline

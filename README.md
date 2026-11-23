@@ -149,6 +149,8 @@ Release notes are in [CHANGELOG.md](CHANGELOG.md) (current release: v1.0, 11 Oct
 - [Commercial Intelligence Dashboard](https://github.com/tanmaymandal0207-cmyk/Commercial-Intelligence-Dashboard): Power BI revenue, pricing and lifecycle analysis
 - [Logistics Expense Tracker](https://github.com/tanmaymandal0207-cmyk/logistics-expense-tracker): SUMIFS reconciliation of hand-typed monthly freight totals
 
+<p align="right"><a href="#top">↑ Back to top</a></p>
+
 ---
 
 **Author:** Tanmay Mandal, Business Analysis · Operations · ERP · [LinkedIn](https://www.linkedin.com/in/tanmay-mandal-286623247)

@@ -1,5 +1,7 @@
 # Anonymisation
 
+[← Back to README](../README.md)
+
 The workbooks come from real operations. Before publishing, every file was anonymised and then checked three separate ways. Reconciliation quantities are untouched; only identifying and commercial data is masked.
 
 ## What was masked
